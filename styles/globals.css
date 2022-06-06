@@ -1,16 +1,32 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.homebody {
+  background-color: #fff;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.hero-img {
+  background-image: url('/images/blur.jpg');
+  object-fit: cover;
 }
 
-* {
-  box-sizing: border-box;
+.merch {
+  font-weight: bold;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 1588px) {
+  .imginset {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .small-hide {
+    display: none;
+  }
+  .whatwedo {
+    /*margin-top: 10px;*/
+  }
 }
